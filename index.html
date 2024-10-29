@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perhitungan Bunga dan Anuitas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Perhitungan Bunga dan Anuitas</h1>
+
+        <div class="form-group">
+            <label for="calculationType">Pilih Tipe Perhitungan:</label>
+            <select id="calculationType">
+                <option value="">-- Pilih --</option>
+                <option value="simpleInterest">Bunga Tunggal</option>
+                <option value="compoundInitial">Bunga Majemuk (Modal Awal)</option>
+                <option value="compoundFinal">Bunga Majemuk (Modal Akhir)</option>
+                <option value="annuity">Anuitas</option>
+            </select>
+        </div>
+
+        <div id="formInputs"></div>
+        <button id="calculateButton" style="display: none;">Hitung</button>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
